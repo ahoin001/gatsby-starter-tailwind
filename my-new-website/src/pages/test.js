@@ -1,13 +1,17 @@
 import React from 'react'
 // import Navbar from '../components/navbar';
-import PC from '../components/pricecard';
+import MyLayout from '../components/myLayout';
 
- const Test = () => {
+const Test = () => {
     return (
         <div>
-            
-        {/* <Navbar/> */}
-<PC/>
+
+            {/* <Navbar /> */}
+
+            <MyLayout>
+
+            </MyLayout>
+
         </div>
     )
 }

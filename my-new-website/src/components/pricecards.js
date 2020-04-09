@@ -38,7 +38,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className="mt-8 max-w-sm max-w-lg sm:max-w-lg md:max-w-xl lg:max-w-xl rounded overflow-hidden shadow-lg">
+                <div className="mt-8 max-w-lg sm:max-w-lg md:max-w-xl lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeA320} alt="plane A320" />
 
@@ -80,7 +80,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl lg:max-w-xl rounded overflow-hidden shadow-lg">
+                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeB737} alt="B737" />
 
@@ -117,7 +117,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl lg:max-w-xl rounded overflow-hidden shadow-lg">
+                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeB737NG} alt="B737NG" />
 
@@ -160,7 +160,7 @@ const priceCards = () => {
                     MULTI CREW CERTIFIED REGIONAL JET & HEAVY TURBOPROP
                 </div>
 
-                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl lg:max-w-xl rounded overflow-hidden shadow-lg">
+                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeSaab340} alt="plane Saab340" />
 
@@ -196,7 +196,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl lg:max-w-xl rounded overflow-hidden shadow-lg">
+                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeERJ145} alt="plane Turbojet ERJ-145 " />
 
@@ -238,7 +238,7 @@ const priceCards = () => {
                     A US PASSPORT OR GREEN CARD
                 </div>
 
-                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl lg:max-w-xl rounded overflow-hidden shadow-lg">
+                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeShorts360} alt="Heavy Turboprop Shorts 360 " />
 
@@ -273,7 +273,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl lg:max-w-xl rounded overflow-hidden shadow-lg">
+                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeLearjet35} alt="Learjet 35 FAA " />
 
@@ -320,7 +320,7 @@ const priceCards = () => {
                     EASA MULTI CREW CERTIFIED EXECUTIVE JET
                 </div>
 
-                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl lg:max-w-xl rounded overflow-hidden shadow-lg">
+                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeLearjetEASA} alt="Heavy Turboprop Shorts 360 " />
 

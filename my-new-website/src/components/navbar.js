@@ -1,22 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
 import companyLogo from "../images/EJLogo.png";
 
 // TODO CHECK COMPATIBILITY FOR STICKY PROPERTY BEFORE PUSHING TO PRODUCTION
 
-const Navbar = () => {
+const Navbar = (props) => {
 
-    const [displayLinks, setdisplayLinks] = useState(false)
-    // const [activeLink, setActiveLinks] = useState(false)
+    console.log(props.showNavList)
+
+    let navList = 'z-20 w-full lg:hidden'
+    if (props.showNavList) {
+      navList += ' block'
+    } else {
+        navList += ' hidden'
+    }
+
+    console.log(`PPPPPPPP`,navList)
 
     return (
 
-        <header className="sticky top-0 shadow " role="navigation">
+        <header className="sticky top-0 shadow " role="navigation" >
 
-            <nav className="bg-white shadow lg:hidden" role="navigation">
+            <nav className=" bg-white shadow lg:hidden" role="navigation">
 
-                <div className="shadow  p-4 flex flex-wrap items-center md:flex-no-wrap ">
+                <div className="shadow p-4 flex flex-wrap items-center ">
 
                     <div className="block w-24 md:mr-8">
                         <a href="#" rel="home">
@@ -34,7 +43,7 @@ const Navbar = () => {
                     <div className="ml-auto lg:hidden">
 
                         <button
-                            onClick={() => setdisplayLinks(!displayLinks)}
+                            onClick={props.toggleNavList}
                             className="flex items-center px-3 py-2 border rounded text-purple-500"
                             type="button"
                         >
@@ -48,15 +57,16 @@ const Navbar = () => {
                     </div>
 
                     {/* width-full makes div wrap, if flex wrap enabled */}
-                    <div className={` ${displayLinks ? 'block' : 'hidden'} w-full lg:hidden  `}>
+                    {/* Conditionally show lists */}
+                    <div className={navList}>
 
-                        <ul className="flex flex-col mt-4 mx-4 pt-4 border-t sm:text-center md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4 lg:mr-8 md:border-0">
+                        <ul className="flex flex-col mt-4 mx-4 pt-4 border-t md:border-0 lg:mr-8">
 
                             <li className="py-1">
-                                <a className="block text-purple-600 font-bold px-4 py-2 text-3xl md:p-2 lg:px-4" href="#" title="Link">Pricing</a>
+                                <a className="block text-purple-600 font-bold leading-tight px-4 py-2 text-3xl md:p-2 lg:px-4" href="#" title="Link">Pricing</a>
                             </li>
                             <li className="py-1">
-                                <a className="block px-4 py-1 md:p-2 lg:px-4 " href="#" title="Active Link">Airline Pilot Program</a>
+                                <a className="block font-semibold text-gray-700 leading-tight px-4 py-1 md:p-2 lg:px-4 " href="#" title="Active Link">Airline Pilot Program</a>
                             </li>
 
                             <Link to='/pricing'>
@@ -75,7 +85,7 @@ const Navbar = () => {
                         </ul>
 
 
-                        <ul className="flex flex-col mt-4 mx-4 pt-4 border-t sm:text-center md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0">
+                        <ul className="flex flex-col mt-4 mx-4 pt-4 border-t md:border-0">
 
                             <li className="py-1">
                                 <a className="block text-purple-600 font-bold px-4 py-2 text-3xl md:p-2 lg:px-4" href="#" title="Link">About Us</a>
@@ -139,5 +149,10 @@ const Navbar = () => {
 
 
 }
+
+Navbar.propTypes = {
+    showNavList: PropTypes.bool,
+    toggleNavList: PropTypes.func,
+  };
 
 export default Navbar
