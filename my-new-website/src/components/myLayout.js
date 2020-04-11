@@ -22,6 +22,13 @@ const MyLayout = ({ children }) => {
 
     }
 
+    const hideNavList = () => {
+
+        setshowNavList(false)
+        console.log('Toggled Nav From Header')
+
+    }
+
 
     return (
 
@@ -30,11 +37,17 @@ const MyLayout = ({ children }) => {
             <Navbar
                 showNavList={showNavList}
                 toggleNavList={toggleNavList}
+                hideNavList={hideNavList}
             />
 
             <div style={{ 'zIndex': '-10' }} onClick={backDropClicked}>
 
-                <main className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-8 md:p-8 w-full">
+                {/* Default Container, may use again but want to try my own settingns */}
+                {/* <main className="w-full bg-green-300 mx-auto px-4 py-8 flex flex-col flex-1 max-w-4xl  md:justify-center md:p-8 ">
+                    {children}
+                </main> */}
+
+                <main className="flex flex-col flex-1 max-w-4xl md:justify-center md:p-8 ">
                     {children}
                 </main>
 

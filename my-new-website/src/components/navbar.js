@@ -12,18 +12,18 @@ const Navbar = (props) => {
 
     let navList = 'z-20 w-full lg:hidden'
     if (props.showNavList) {
-      navList += ' block'
+        navList += ' block'
     } else {
         navList += ' hidden'
     }
 
-    console.log(`PPPPPPPP`,navList)
+    console.log(`State of Navbar: ${props.showNavList} && classes of navList`, navList)
 
     return (
 
         <header className="sticky top-0 shadow " role="navigation" >
 
-            <nav className=" bg-white shadow lg:hidden" role="navigation">
+            <nav className="z-20 bg-white shadow lg:hidden" role="navigation">
 
                 <div className="shadow p-4 flex flex-wrap items-center ">
 
@@ -51,7 +51,7 @@ const Navbar = (props) => {
                                 <title>HamburgerMenu</title>
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                             </svg>
-                            
+
                         </button>
 
                     </div>
@@ -88,20 +88,23 @@ const Navbar = (props) => {
                         <ul className="flex flex-col mt-4 mx-4 pt-4 border-t md:border-0">
 
                             <li className="py-1">
-                                <a className="block text-purple-600 font-bold px-4 py-2 text-3xl md:p-2 lg:px-4" href="#" title="Link">About Us</a>
+                                <a className="block text-purple-600 font-bold px-4 py-2 text-3xl md:p-2 lg:px-4" href="#" title="Link">About Eagle Jet</a>
                             </li>
 
+                            <Link to='/about'>
+                                <li className="block px-4 py-1 md:p-2 lg:px-4">
+                                  About Us
+                                </li>
+                            </Link>
+
                             <li className="py-1">
-                                <a className="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Contact Us</a>
-                            </li>
-                            <li className="py-1">
-                                <a className="block px-4 py-1 md:p-2 lg:px-4 " href="#" title="Active Link">FAQ</a>
+                                <a className="block px-4 py-1 md:p-2 lg:px-4 " href="#" title="Active Link">Contact Us</a>
                             </li>
                             <li className="py-1">
                                 <a className="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Testimonials</a>
                             </li>
                             <li className="py-1">
-                                <a className="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Other Links</a>
+                                <a className="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">FAQ</a>
                             </li>
 
                         </ul>
@@ -153,6 +156,7 @@ const Navbar = (props) => {
 Navbar.propTypes = {
     showNavList: PropTypes.bool,
     toggleNavList: PropTypes.func,
-  };
+    hideNavList: PropTypes.func,
+};
 
 export default Navbar
