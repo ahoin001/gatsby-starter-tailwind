@@ -2,7 +2,9 @@ import React from "react";
 
 import MyLayout from "../components/myLayout"
 import SEO from "../components/seo";
-import heroImage from '../images/american-eagle/american-eagle-flying-mobile.webp'
+import heroImagemobile from '../images/american-eagle/american-eagle-flying-mobile.webp'
+import heroImageTablet from '../images/american-eagle/american-eagle-flying-tablet.webp'
+import heroImageDesktop from '../images/american-eagle/american-eagle-flying-desktop.webp'
 // import dogIllustration from "../images/dog-illustration.svg";
 
 function AboutPage() {
@@ -24,8 +26,22 @@ function AboutPage() {
         <div className="bg-blue-200">
 
           <img
-            className="object-cover"
-            src={heroImage}
+            className="object-cover md:hidden"
+            src={heroImagemobile}
+            alt="american-eagle"
+
+          />
+
+          <img
+            className="object-cover hidden md:block lg:hidden"
+            src={heroImageTablet}
+            alt="american-eagle"
+
+          />
+
+          <img
+            className="object-cover hidden lg:block"
+            src={heroImageDesktop}
             alt="american-eagle"
 
           />
@@ -34,9 +50,9 @@ function AboutPage() {
 
         <div className="mt-8 ">
 
-          <h1 className="font-roboto text-2xl text-center " >ABOUT EAGLE JET INTERNATIONAL</h1>
+          <h1 className="font-montserrat text-3xl text-center " >ABOUT EAGLE JET INTERNATIONAL</h1>
 
-          <div className="py-8 px-8 font-roboto font-light text-md leading-loose">
+          <div className="py-8 px-8 font-roboto font-normal text-md leading-loose">
 
             <p>Our First Officer programs commenced in 1996 and have given low time pilots with no airline experience from many areas
             (European Union, United States, Asia etc.) the unique opportunity to be provided with airline First Officer employment or
@@ -51,7 +67,7 @@ function AboutPage() {
 
           </div>
 
-          <div className="bg-gray-200 py-8 px-8 font-roboto font-light text-md leading-loose">
+          <div className="bg-red-100 py-8 px-8 font-roboto font-normal text-md leading-loose">
 
             <p>
               Our <span> heavy jet programs</span> primarily take place on the A320 and B737 NG, are for low time pilots, are based in the European area
@@ -65,7 +81,7 @@ function AboutPage() {
 
             <p>
               Our USA based multi crew certified executive jet and heavy turboprop programs are for low time US citizens
-              and green card holders with an FAA license and take place with our partner FAA Part 135 air carriers. They 
+              and green card holders with an FAA license and take place with our partner FAA Part 135 air carriers. They
               include type rating + First Officer employment. American FAA Part 121 regional airlines give priority for hiring
               to pilots who are already experienced and familiar with the airline operational environment on multi crew certified turbine
               powered aircraft before investing a substantial financial amount in their regional jet training.
@@ -73,21 +89,37 @@ function AboutPage() {
 
           </div>
 
-          <div className="bg-gray-200 py-8 px-8 font-roboto font-light text-md leading-loose">
+          <div className="bg-red-100 py-8 px-8 font-roboto font-light text-md leading-loose">
 
             <p>
-            Our multi crew certified regional jet and heavy turboprop First Officer programs for low time FAA pilots from any country ubased close 
-            to the USA give pilots the opportunity to gain airline multi crew certified First Officer experience including operations to and from
-            large international airports. Any pilot holding an FAA license has access to these programs. Should a pilot not hold the FAA license, a 
-            short license conversion course is required and can be completed in any FAA Part 141 flight school of your choice or with any of our 
-            FAA partner flight schools. 
+              Our multi crew certified regional jet and heavy turboprop First Officer programs for low time FAA pilots from any country ubased close
+              to the USA give pilots the opportunity to gain airline multi crew certified First Officer experience including operations to and from
+              large international airports. Any pilot holding an FAA license has access to these programs. Should a pilot not hold the FAA license, a
+              short license conversion course is required and can be completed in any FAA Part 141 flight school of your choice or with any of our
+              FAA partner flight schools.
             </p>
 
             <p>
-            This airline multi crew First Officer experience has been greatly appreciated by the many airlines worldwide 
-            which have been hiring our pilots during or upon completion of their program since 1996. For the past 9 years, many cadets have been sent 
-            to Eagle Jet International by their foreign major airline to attend our multi crew certified airline First Officer programs immediately upon 
-            obtaining their commercial pilot license with instrument and multiengine ratings.
+              This airline multi crew First Officer experience has been greatly appreciated by the many airlines worldwide
+              which have been hiring our pilots during or upon completion of their program since 1996. For the past 9 years, many cadets have been sent
+              to Eagle Jet International by their foreign major airline to attend our multi crew certified airline First Officer programs immediately upon
+              obtaining their commercial pilot license with instrument and multiengine ratings.
+          </p>
+
+          </div>
+
+          <div className="bg-gray-100 py-8 px-8 font-roboto font-light text-md leading-loose">
+
+            <h1 className="font-montserrat font-medium text-center text-3xl">MISSION STATEMENT</h1>
+
+            <p>
+            Eagle Jet International&apos;s main objective is to complete your initial career goal of getting hired by an airline in 
+            the most economical, professional, and above all, the safest manner possible in the shortest period of time.
+            </p>
+
+            <p>
+            Since the commencement of our airline first officer programs in 1996, several thousands of pilots have been hired by airlines 
+            worldwide while attending one of our programs or shortly after its completion.
           </p>
 
           </div>

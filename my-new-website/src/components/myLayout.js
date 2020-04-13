@@ -47,7 +47,7 @@ const MyLayout = ({ children }) => {
                     {children}
                 </main> */}
 
-                <main className="flex flex-col flex-1 max-w-4xl md:justify-center md:p-8 ">
+                <main className=" flex flex-col flex-1  justify-center items-center ">
                     {children}
                 </main>
 
