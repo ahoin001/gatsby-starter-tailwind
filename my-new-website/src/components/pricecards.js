@@ -65,7 +65,7 @@ const priceCards = () => {
 
                             <Link className="flex items-center no-underline text-white" to="/">
                                 <p href="#"
-                                    className="inline-block text-center px-5 py-3 mb-6 rounded-lg shadow-lg bg-indigo-500 
+                                    className="inline-block text-center py-3 px-2 md:px-5 md:py-3 md:mb-6 rounded-lg shadow-lg bg-indigo-500 
                             text-sm text-white uppercase tracking-wider font-semibold sm:text-base
                             lg:hover:bg-blue-700 "
                                 >
@@ -80,7 +80,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
+                <div className=" mt-12 max-w-lg sm:max-w-lg md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeB737} alt="B737" />
 
@@ -102,7 +102,7 @@ const priceCards = () => {
 
                             <Link className="flex items-center no-underline text-white" to="/">
                                 <p href="#"
-                                    className="inline-block text-center px-5 py-3 mb-6 rounded-lg shadow-lg bg-indigo-500 
+                                    className="inline-block text-center py-3 px-2 md:px-5 md:py-3 md:mb-6 mb-6 rounded-lg shadow-lg bg-indigo-500 
                             text-sm text-white uppercase tracking-wider font-semibold sm:text-base
                             lg:hover:bg-blue-700 "
                                 >
@@ -117,7 +117,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
+                <div className=" mt-12 max-w-lg sm:max-w-lg md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeB737NG} alt="B737NG" />
 
@@ -140,7 +140,7 @@ const priceCards = () => {
 
                             <Link className="flex items-center no-underline text-white" to="/">
                                 <p href="#"
-                                    className="inline-block text-center px-5 py-3 mb-6 rounded-lg shadow-lg bg-indigo-500 
+                                    className="inline-block text-center py-3 px-2 md:px-5 md:py-3 md:mb-6 mb-6 rounded-lg shadow-lg bg-indigo-500 
                             text-sm text-white uppercase tracking-wider font-semibold sm:text-base
                             lg:hover:bg-blue-700 "
                                 >
@@ -160,7 +160,7 @@ const priceCards = () => {
                     MULTI CREW CERTIFIED REGIONAL JET & HEAVY TURBOPROP
                 </div>
 
-                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
+                <div className="mt-8 max-w-lg sm:max-w-lg md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeSaab340} alt="plane Saab340" />
 
@@ -181,7 +181,7 @@ const priceCards = () => {
 
                             <Link className="flex items-center no-underline text-white" to="/">
                                 <p href="#"
-                                    className="inline-block text-center px-5 py-3 mb-6 rounded-lg shadow-lg bg-indigo-500 
+                                    className="inline-block text-center py-3 px-2 md:px-5 md:py-3 md:mb-6 mb-6 rounded-lg shadow-lg bg-indigo-500 
                             text-sm text-white uppercase tracking-wider font-semibold sm:text-base
                             lg:hover:bg-blue-700 "
                                 >
@@ -196,7 +196,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
+                <div className=" mt-12 max-w-lg sm:max-w-lg md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeERJ145} alt="plane Turbojet ERJ-145 " />
 
@@ -217,7 +217,7 @@ const priceCards = () => {
 
                             <Link className="flex items-center no-underline text-white" to="/">
                                 <p href="#"
-                                    className="inline-block text-center px-5 py-3 mb-6 rounded-lg shadow-lg bg-indigo-500 
+                                    className="inline-block text-center py-3 px-2 md:px-5 md:py-3 md:mb-6 mb-6 rounded-lg shadow-lg bg-indigo-500 
                             text-sm text-white uppercase tracking-wider font-semibold sm:text-base
                             lg:hover:bg-blue-700 "
                                 >
@@ -238,7 +238,7 @@ const priceCards = () => {
                     A US PASSPORT OR GREEN CARD
                 </div>
 
-                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
+                <div className="mt-8 max-w-lg sm:max-w-lg md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeShorts360} alt="Heavy Turboprop Shorts 360 " />
 
@@ -258,7 +258,7 @@ const priceCards = () => {
 
                             <Link className="flex items-center no-underline text-white" to="/">
                                 <p href="#"
-                                    className="inline-block text-center px-5 py-3 mb-6 rounded-lg shadow-lg bg-indigo-500 
+                                    className="inline-block text-center py-3 px-2 md:px-5 md:py-3 md:mb-6 mb-6 rounded-lg shadow-lg bg-indigo-500 
                             text-sm text-white uppercase tracking-wider font-semibold sm:text-base
                             lg:hover:bg-blue-700 "
                                 >
@@ -273,7 +273,7 @@ const priceCards = () => {
 
                 </div>
 
-                <div className=" mt-12 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
+                <div className=" mt-12 max-w-lg sm:max-w-lg md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeLearjet35} alt="Learjet 35 FAA " />
 
@@ -294,7 +294,7 @@ const priceCards = () => {
 
                             <Link className="flex items-center no-underline text-white" to="/">
                                 <p href="#"
-                                    className="inline-block text-center px-5 py-3 mb-6 rounded-lg shadow-lg bg-indigo-500 
+                                    className="inline-block text-center py-3 px-2 md:px-5 md:py-3 md:mb-6 mb-6 rounded-lg shadow-lg bg-indigo-500 
                             text-sm text-white uppercase tracking-wider font-semibold sm:text-base
                             lg:hover:bg-blue-700 "
                                 >
@@ -320,7 +320,7 @@ const priceCards = () => {
                     EASA MULTI CREW CERTIFIED EXECUTIVE JET
                 </div>
 
-                <div className="mt-8 max-w-lg sm:max-w-md md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
+                <div className="mt-8 max-w-lg sm:max-w-lg md:max-w-xl  lg:max-w-4xl rounded overflow-hidden shadow-lg">
 
                     <img className="w-full" src={planeLearjetEASA} alt="Heavy Turboprop Shorts 360 " />
 
@@ -341,7 +341,7 @@ const priceCards = () => {
 
                             <Link className="flex items-center no-underline text-white" to="/">
                                 <p href="#"
-                                    className="inline-block text-center px-5 py-3 mb-6 rounded-lg shadow-lg bg-indigo-500 
+                                    className="inline-block text-center py-3 px-2 md:px-5 md:py-3 md:mb-6 mb-6 rounded-lg shadow-lg bg-indigo-500 
                             text-sm text-white uppercase tracking-wider font-semibold sm:text-base
                             lg:hover:bg-blue-700 "
                                 >
