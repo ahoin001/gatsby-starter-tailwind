@@ -93,16 +93,20 @@ const Navbar = (props) => {
 
                             <Link to='/about'>
                                 <li className="block px-4 py-1 md:p-2 lg:px-4">
-                                  About Us
+                                    About Us
                                 </li>
                             </Link>
 
                             <li className="py-1">
                                 <a className="block px-4 py-1 md:p-2 lg:px-4 " href="#" title="Active Link">Contact Us</a>
                             </li>
-                            <li className="py-1">
-                                <a className="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Testimonials</a>
-                            </li>
+
+                            <Link to='/testimonials'>
+                                <li className="py-1">
+                                    <a className="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Testimonials</a>
+                                </li>
+                            </Link>
+
                             <li className="py-1">
                                 <a className="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">FAQ</a>
                             </li>
