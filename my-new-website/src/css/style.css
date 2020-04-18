@@ -7,3 +7,40 @@
 .loo {
     color: brown;
 }
+
+.gold-quote{
+
+    /* color:blue; */
+
+}
+.gold-quote::before{
+
+    content: '\201C';
+    float: left;
+    margin-left: -2.5rem;
+    /* margin-top: 1rem; */
+
+    display: inline-block;
+    vertical-align: top;
+    /* height: 30px; */
+    line-height: 3rem;
+    font-size: 4rem;
+    color: #B08B1C;
+    font-family: montserrat, serif;
+}
+
+.gold-quote::after{
+
+    content: '\201D';
+    float: right;
+    /* margin-right: -1rem; */
+    /* margin-top: -20px; */
+
+    display: inline-block;
+    vertical-align: top;
+    /* height: 30px; */
+    line-height: 3rem;
+    font-size: 4rem;
+    color: #B08B1C;
+    font-family: Georgia, serif;
+}
